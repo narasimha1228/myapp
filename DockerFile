@@ -1,0 +1,11 @@
+# Base image with Python
+FROM python:3.9-slim
+
+# Create app directory
+WORKDIR /app
+
+# Copy source code
+COPY hello.py .
+
+# Run the script
+CMD ["python", "hello.py"]
